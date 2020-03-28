@@ -42,6 +42,7 @@
 
     <div id="pysch" style="display: none">
         <h1 id="pyschText"></h1>
+        <ul id="scorebd"></ul>
         <button id="ready" class="btn btn-primary btn-lg btn-block">READY</button>
     </div>
 
@@ -132,6 +133,9 @@
             }
         })
         console.log(msg.scorebd);
+        msg.scorebd.forEach(el => {
+            $('#scorebd').append(li).html(el.name + " has " + el.point + " points ");
+        });
         // $('#pyschText').html("THIS IS PYSCH TEXT");
     });
 
