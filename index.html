@@ -134,7 +134,7 @@
         })
         console.log(msg.scorebd);
         msg.scorebd.forEach(el => {
-            $('#scorebd').append('<li>').html(el.name + " has " + el.point + " points ");
+            $('#scorebd').append($('<li>').html(el.name + " has " + el.point + " points "));
         });
         // $('#pyschText').html("THIS IS PYSCH TEXT");
     });
